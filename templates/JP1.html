@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Jugador de Polo 1 - Polo Robles</title>
+    <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="top-bar">
+            <div class="container">
+                <!-- Logo de la empresa -->
+                <div class="header-logo">
+                    <img src="../img/pre-logo.png" alt="Logo de la empresa">
+                </div>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <div class="container">
+               
+                <!-- Menú -->
+                <nav class="header-nav">
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="../catalogo.html">Catálogo</a></li>
+                        <li><a href="#">Quiénes Somos</a></li>
+                        <li><a href="../contacto.html">Contacto</a></li>
+                        <li><form action="/search" method="get" class="search-form">
+                          <input type="text" name="q" class="search-input" placeholder="Buscar..."></form></li>  
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+    <div class="container">    
+    <div class="estatua">
+        <div class="slider">
+            <span id="slide-1"></span>
+            <span id="slide-2"></span>
+            <span id="slide-3"></span>
+            <div class="image-container">
+              <img src="../img/esculturas/JP1/PR 001.JPG" class="slide" width="750" height="500" />
+              <img src="../img/esculturas/JP1/PR 001 (1).JPG" class="slide" width="750" height="500" />
+              <img src="../img/esculturas/JP1/PR 001 (2).JPG" class="slide" width="750" height="500" />
+            </div>
+            <div class="buttons">
+              <a href="#slide-1"></a>
+              <a href="#slide-2"></a>
+              <a href="#slide-3"></a>
+            </div>
+          </div>
+        <div class="caracteristicas">
+            <div id="estatua-titulo">Jugador de Polo Taqueando N°1</div>
+            <div id="estatua-precio">Precio</div>
+            <div class="estatua-dimensiones">
+                <div>
+                    <h2>Dimensiones</h2>
+                    <table >
+                        <tr>
+                            <td>Materiales</td>
+                            <td id="materiales">Resina en base de madera</td>
+                        </tr>
+                        <tr>
+                            <td>Dimensiones</td>
+                            <td id="dimensiones">9cm x 17cm x 17cm</td>
+                        </tr>
+                        <tr>
+                            <td>Código</td>
+                            <td id="codigo">PR 001</td>
+                        </tr>
+                    </table>
+                </div>
+           </div>
+        </div>
+    </div>
+    </div>
+    <div class="otras"><h1>También podría interesarte</h1>
+        <div class="caja">
+         <div class="caja-objeto">
+            <figure>
+                <a href="./templates/JP2" target="_blank">
+                <img src="../img/esculturas/JP2/PR 002.JPG" alt="Jugador de Polo 2" height="150px">
+            </a>
+            </figure>
+            <h3>Jugador Taqueando N°2</h3>
+         </div>
+         <div class="caja-objeto">
+            <figure>
+                <a href="./templates/CArabe" target="_blank">
+                <img src="../img/esculturas/CArabe/PR 006.JPG" alt="Caballo Árabe" height="150px">
+            </a>
+            </figure>
+            <h3>Caballo Árabe</h3>
+         </div>
+         <div class="caja-objeto">
+            <figure>
+                <a href="./templates/Toro" target="_blank">
+                <img src="../img/esculturas/Toro/PR 014.JPG" alt="Toro" height="150px">
+            </a>
+            </figure>
+            <h3>Toro</h3>
+         </div>
+         <div class="caja-objeto">
+            <figure>
+                <a href="./templates/SanMartin" target="_blank">
+                <img src="../img/esculturas/SanMartin/PR 015.JPG" alt="San Martín" height="150px">
+            </a>
+            </figure>
+            <h3>San Martín</h3>
+         </div>
+        </div>
+        
+    </div>
+
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Acerca de Polo</a></li>
+                    <li><a href="#">Contacto con Polo</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright© 2024. Polo Robles Argentina.
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">Defensa del consumidor.</a>.
+                </p>
+            </div>
+            <div class="footer-social">
+                <ul>
+                    <li><a href="https://m.facebook.com/profile.php?id=100046452861886"><img src="../img/rrss/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="https://www.instagram.com/Polo.Robles.Argentina/"><img src="../img/rrss/instagram.png" alt="Instagram"></a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>

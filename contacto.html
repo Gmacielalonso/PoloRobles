@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polo Robles Esculturas</title>
+    <!-- <link rel="stylesheet" href="css/styles.css"> -->
+    <link rel="stylesheet" href="css/contactos.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="top-bar">
+            <div class="container">
+                <!-- Logo de la empresa -->
+                <div class="header-logo">
+                    <img src="./img/pre-logo.png" alt="Logo de la empresa">
+                </div>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <div class="container">
+               
+                <!-- Menú -->
+                <nav class="header-nav">
+                    <ul>
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="./catalogo.html">Catálogo</a></li>
+                        <li><a href="#">Quiénes Somos</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                        <li><form action="/search" method="get" class="search-form">
+                          <input type="text" name="q" class="search-input" placeholder="Buscar..."></form></li>  
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    
+    <main>
+         <!-- formulario de contacto en html y css -->
+         <div class="container-form">
+            <h1>Formulario de Contacto</h1>
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+              </div>
+              <div class="form-group">
+                <label for="reason">Motivo de contacto:</label>
+                <select id="reason" name="reason" required>
+                  <option value="">Seleccione...</option>
+                  <option value="consulta">Consulta</option>
+                  <option value="comentario">Comentario</option>
+                  <option value="queja">Queja</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="label-check" for="checkbox">Acepto los términos y condiciones:</label>
+                <input class="check" type="checkbox" id="checkbox" name="terms" required>
+              </div>
+              <div class="form-group">
+                <label for="attachment">Adjuntar archivo:</label>
+                <input type="file" id="attachment" name="attachment">
+              </div>
+              <div class="form-group">
+                <button class="boton" type="submit">Enviar</button>
+              </div>
+            </form>
+          </div>
+          <script src="./js/contactojs.js"></script>
+            
+    </main>
+
+    <footer id="footer">
+      <div class="container">
+          <div class="footer-links">
+              <ul>
+                  <li><a href="#">Acerca de Polo</a></li>
+                  <li><a href="#">Contacto con Polo</a></li>
+              </ul>
+          </div>
+          <div class="footer-bottom">
+              <p>Copyright© 2024. Polo Robles Argentina.
+              <a href="#">Defensa del consumidor.</a>.
+              </p>
+          </div>
+          <div class="footer-social">
+              <ul>
+                  <li><a href="https://m.facebook.com/profile.php?id=100046452861886"><img src="img/rrss/facebook.png" alt="Facebook"></a></li>
+                  <li><a href="https://www.instagram.com/Polo.Robles.Argentina/"><img src="img/rrss/instagram.png" alt="Instagram"></a></li>
+              </ul>
+          </div>
+      </div>
+      
+  </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

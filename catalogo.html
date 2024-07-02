@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+
+<body>
+    <header id="header">
+    <div class="top-bar">
+        <div class="container">
+            <!-- Logo de la empresa -->
+            <div class="header-logo">
+                <img src="./img/pre-logo.png" alt="Logo de la empresa">
+            </div>
+        </div>
+    </div>
+    <div class="bottom-bar">
+        <div class="container">
+           
+            <!-- Menú -->
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./catalogo.html">Catálogo</a></li>
+                    <li><a href="#">Quiénes Somos</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><form action="/search" method="get" class="search-form">
+                      <input type="text" name="q" class="search-input" placeholder="Buscar..."></form></li>  
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+    <!-- Mi parte principal -->
+    <main>
+        <!-- banner para publicidad o mostrar un buen poster y alguna info -->
+        <section id="banner">
+            <h1>Esculturas en resina y madera relacionadas al mundo del polo</h1>
+            <h3>Decorá tu hogar con el mejor estilo de campo.</h3>
+        </section>
+        <!-- busqueda en la plataforma -->
+        <section id="search">
+            <h2>¿Qué estas buscando?</h2>
+            <input type="text" placeholder="Busqueda..." >
+        </section>
+
+        
+        <div class="contenedor-objetos" id="objetos">
+            <div class="objeto">
+                <figure>
+                    <a href="./templates/JP1.html" target="_blank">
+                    <img src="./img/esculturas/JP1/PR 001.JPG" alt="Jugador de Polo 1">
+                </a>
+                </figure>
+                <div class="info-producto">
+                    <h2>Jugador Taqueando N°1</h2>
+                    <p class="precio">$$$$</p>
+                </div>
+            </div>
+            <div class="objeto">
+                <figure>
+                    <a href="./templates/JP2.html" target="_blank">
+                    <img src="./img/esculturas/JP2/PR 002.JPG" alt="Jugador de Polo 2">
+                </a>
+                </figure>
+                <div class="info-producto">
+                    <h2>Jugador Taqueando N°2</h2>
+                    <p class="precio">$$$$</p>
+                </div>
+            </div>
+            <div class="objeto">
+                <figure>
+                    <a href="./templates/CArabe.html" target="_blank">
+                    <img src="./img/esculturas/CArabe/PR 006.JPG" alt="Caballo Árabe">
+                </a>
+                </figure>
+                <div class="info-producto">
+                    <h2>Caballo Árabe</h2>
+                    <p class="precio">$$$$</p>
+                </div>
+             </div>
+            <div class="objeto">
+                <figure>
+                    <a href="./templates/Toro.html" target="_blank">
+                    <img src="./img/esculturas/Toro/PR 014.JPG" alt="Toro">
+                </a>
+                </figure>
+                <div class="info-producto">
+                    <h2>Toro</h2>
+                    <p class="precio">$$$$</p>
+                </div>
+            </div>
+            <div class="objeto">
+                <figure>
+                    <a href="./templates/SanMartin.html" target="_blank">
+                    <img src="./img/esculturas/SanMartin/PR 015.JPG" alt="San Martín">
+                </a>
+                </figure>
+                <div class="info-producto">
+                    <h2>San Martín</h2>
+                    <p class="precio">$$$$</p>
+                </div>
+            </div>
+        </div>
+
+
+        
+        
+    
+    </main>
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Acerca de Polo</a></li>
+                    <li><a href="./contacto.html">Contacto con Polo</a></li>
+                    <li><a href="./nuevo_item.html">Agregar Item</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright© 2024. Polo Robles Argentina.
+                <a href="#">Defensa del consumidor.</a>.
+                </p>
+            </div>
+            <div class="footer-social">
+                <ul>
+                    <li><a href="https://m.facebook.com/profile.php?id=100046452861886"><img src="img/rrss/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="https://www.instagram.com/Polo.Robles.Argentina/"><img src="img/rrss/instagram.png" alt="Instagram"></a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </footer>
+    <script type="module" src="./js/listado.js"></script>
+</body>
+</html>
+    

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Item</title>
+    <link rel="stylesheet" href="./css/nuevo_item.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Agregar Nuevo Item</h1> <a href="./catalogo.html">Catálogo</a>
+        <!-- 
+        enctype="multipart/form-data": Este atributo es esencial cuando el formulario incluye un 
+        campo de subida de archivos (<input type="file">). 
+        Permite que los archivos se envíen al servidor como datos binarios en lugar de solo texto.
+        -->
+        <!-- <form id="itemForm" enctype="multipart/form-data"> -->
+        <form id="itemForm">
+            <input type="hidden" id="id" name="id"> <!-- Campo oculto para almacenar el ID de la película -->
+
+            <label for="nombre">Nombre del ítem</label>
+            <input type="text" id="nombre" name="nombre" required >    
+            
+            <label for="estatua-precio">Precio</label>
+            <input type="number" id="precio" name="precio" required>
+            
+            <label for="estatua-medidas">Medidas</label>
+            <input type="text" id="medidas" name="medidas" required >            
+
+            <label for="materiales">Materiales</label>
+            <input type="text" id="materiales" name="materiales" required>
+
+            <label for="codigo">Código</label>
+            <input type="text" id="codigo" name="codigo" required >    
+            
+
+            
+            <label for="slide-1">Imagen 1:</label> 
+            <input type="file" id="slide-1" name="imagen1">
+            <label for="slide-2">Imagen 2:</label> 
+            <input type="file" id="slide-2" name="imagen2">
+            <label for="slide-3">Imagen 3:</label> 
+            <input type="file" id="slide-3" name="imagen3">
+            
+            <button type="submit" id="btnSave">Agregar Item</button>
+            <button type="button" id="cancelEdit">Cancelar</button>
+        </form>
+        <div id="message"></div>
+        <h2>Listado de Objetos</h2>
+        <ul id="itemsList"></ul>
+    </div>
+    <script type="module" src="./js/nuevo_item.js"></script>
+</body>
+</html>
