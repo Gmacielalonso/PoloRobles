@@ -101,6 +101,9 @@ window.editItem = (id) => {
       document.getElementById('medidas').value = item.medidas;
       document.getElementById('materiales').value = item.materiales;
       document.getElementById('codigo').value = item.codigo;
+      document.getElementById('slide1').value = item.slide1;
+      document.getElementById('slide2').value = item.slide2;
+      document.getElementById('slide3').value = item.slide3;
       document.getElementById('btnSave').innerText = 'Guardar Cambios';
 
       
@@ -118,6 +121,9 @@ const clearForm = () => {
   document.getElementById('medidas').value = '';
   document.getElementById('materiales').value = '';
   document.getElementById('codigo').value = '';
+  document.getElementById('slide1').value = '';
+  document.getElementById('slide2').value = '';
+  document.getElementById('slide3').value = '';
 
   // Restaurar el texto original del botón de submit
   document.querySelector('button[type="submit"]').innerText = 'Agregar';
