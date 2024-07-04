@@ -103,7 +103,11 @@ window.editItem = (id) => {
       document.getElementById('codigo').value = item.codigo;
       document.getElementById('btnSave').innerText = 'Guardar Cambios';
 
-      
+      if (item.slide1) {
+        const imgPreview = document.getElementById('imgPreview');
+        imgPreview.src = `${API}/static/img/${item.slide1}`;
+        imgPreview.style.display = 'block';
+      }
     })
     .catch(error => {
       console.error('Error al obtener el item para editar:', error);
