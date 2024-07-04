@@ -10,8 +10,8 @@ document.getElementById('itemForm').addEventListener('submit', function(event) {
   const materiales = document.getElementById('materiales').value;
   const codigo = document.getElementById('codigo').value;
   const slide1 = document.getElementById('slide1').files[0];
-  const slide2 = document.getElementById('slide2').files[1];
-  const slide3 = document.getElementById('slide3').files[2];
+  const slide2 = document.getElementById('slide2').files[0];
+  const slide3 = document.getElementById('slide3').files[0];
 
   let formData = new FormData();
   formData.append('nombre', nombre);
@@ -101,9 +101,6 @@ window.editItem = (id) => {
       document.getElementById('medidas').value = item.medidas;
       document.getElementById('materiales').value = item.materiales;
       document.getElementById('codigo').value = item.codigo;
-      document.getElementById('slide1').value = item.slide1;
-      document.getElementById('slide2').value = item.slide2;
-      document.getElementById('slide3').value = item.slide3;
       document.getElementById('btnSave').innerText = 'Guardar Cambios';
 
       

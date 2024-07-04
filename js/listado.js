@@ -27,7 +27,7 @@ const obtenerItems = async () => {
         const ItemAInsertar =`
         <div class="objeto">
                 <figure>
-                    <a href="./templates/JP1.html" target="_blank">
+                    <a href="#" target="_blank">
                     <img src="${API}/static/img/${objetos[i].slide1}" width="250" alt="">
                 </a>
                 </figure>
