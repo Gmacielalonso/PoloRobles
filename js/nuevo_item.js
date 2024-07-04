@@ -95,7 +95,7 @@ window.editItem = (id) => {
     .then(response => response.json())
     .then(item => {
       // Llenar el formulario con los datos
-      document.getElementById('movieId').value = item.id_item;
+      document.getElementById('itemId').value = item.id_item;
       document.getElementById('nombre').value = item.nombre;
       document.getElementById('precio').value = item.precio;
       document.getElementById('medidas').value = item.medidas;
