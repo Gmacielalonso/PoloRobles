@@ -3,7 +3,7 @@ import { API } from './config.js';
 document.getElementById('itemForm').addEventListener('submit', function(event) {
   event.preventDefault();
 
-  const id = document.getElementById('id').value; // Obtener el ID
+  const itemId = document.getElementById('itemId').value; // Obtener el ID
   const nombre = document.getElementById('nombre').value;
   const precio = document.getElementById('precio').value;
   const medidas = document.getElementById('medidas').value;
@@ -26,9 +26,9 @@ document.getElementById('itemForm').addEventListener('submit', function(event) {
   let url = `${API}/items`;
   let method = 'POST';
 
-  if (id) {
+  if (itemId) {
     // Si hay un ID, estamos en modo edición
-    url += `/${id}`;
+    url += `/${itemId}`;
     method = 'PUT'; // Usar el método PUT para actualizar la película existente
 
   }
@@ -61,8 +61,8 @@ function loadItems() {
         itemItem.innerHTML = `
           <span>${item.nombre} (${item.precio})</span>
           <div>
-            <button onclick="editItem(${item.id })">Editar</button>
-            <button onclick="deleteItem(${item.id})">Borrar</button>
+            <button onclick="editItem(${item.id_item })">Editar</button>
+            <button onclick="deleteItem(${item.id_item})">Borrar</button>
           </div>
         `;
         itemsList.appendChild(itemItem);
@@ -95,7 +95,7 @@ window.editItem = (id) => {
     .then(response => response.json())
     .then(item => {
       // Llenar el formulario con los datos
-      document.getElementById('id').value = item.id;
+      document.getElementById('movieId').value = item.id_item;
       document.getElementById('nombre').value = item.nombre;
       document.getElementById('precio').value = item.precio;
       document.getElementById('medidas').value = item.medidas;
@@ -115,15 +115,15 @@ window.editItem = (id) => {
 
 // Función para limpiar el formulario después de guardar cambios o cancelar
 const clearForm = () => {
-  document.getElementById('id').value = '';
+  document.getElementById('itemId').value = '';
   document.getElementById('nombre').value = '';
   document.getElementById('precio').value = '';
   document.getElementById('medidas').value = '';
   document.getElementById('materiales').value = '';
   document.getElementById('codigo').value = '';
-  document.getElementById('slide1').value = '';
-  document.getElementById('slide2').value = '';
-  document.getElementById('slide3').value = '';
+  document.getElementById('slide1').files = '';
+  document.getElementById('slide2').files = '';
+  document.getElementById('slide3').files = '';
 
   // Restaurar el texto original del botón de submit
   document.querySelector('button[type="submit"]').innerText = 'Agregar';
